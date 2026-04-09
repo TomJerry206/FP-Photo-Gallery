@@ -1,6 +1,11 @@
 function upDate(previewPic){
     console.log("Hover or focus triggered");
 
+    let preview = document.getElementById("preview");
+
+preview.src = previewPic.src;
+preview.alt = previewPic.alt;
+
     let imageDiv = document.getElementById("image");
 
     imageDiv.innerHTML = previewPic.alt;
@@ -28,11 +33,10 @@ function upDate(previewPic){
 }
 
 function unDo(){
-    let imageDiv = document.getElementById("image");
 
-    imageDiv.innerHTML = "Hover over an image below to display here.";
-    imageDiv.style.backgroundImage = "";
-    imageDiv.style.color = "white";
+    let preview = document.getElementById("preview");
+    preview.src = "";
+    preview.alt = "";
 }
 
 
