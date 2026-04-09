@@ -6,7 +6,7 @@ function upDate(previewPic){
     imageDiv.innerHTML = previewPic.alt;
     imageDiv.style.backgroundImage = "url('" + previewPic.src + "')";
 
-    // 🎨 đổi màu chữ theo ảnh
+  
     if(previewPic.alt.includes("beach")){
         imageDiv.style.color = "#00e5ff"; // xanh biển
     }
@@ -35,12 +35,10 @@ function unDo(){
     imageDiv.style.color = "white";
 }
 
-/* thêm tabindex */
+
 function addTabFocus(){
     console.log("Page loaded");
-
     let images = document.querySelectorAll("img");
-
     for(let i = 0; i < images.length; i++){
         images[i].setAttribute("tabindex", "0");
     }
