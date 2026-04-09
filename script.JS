@@ -1,0 +1,47 @@
+function upDate(previewPic){
+    console.log("Hover or focus triggered");
+
+    let imageDiv = document.getElementById("image");
+
+    imageDiv.innerHTML = previewPic.alt;
+    imageDiv.style.backgroundImage = "url('" + previewPic.src + "')";
+
+    // 🎨 đổi màu chữ theo ảnh
+    if(previewPic.alt.includes("beach")){
+        imageDiv.style.color = "#00e5ff"; // xanh biển
+    }
+    else if(previewPic.alt.includes("mountain")){
+        imageDiv.style.color = "#4caf50"; // xanh lá
+    }
+    else if(previewPic.alt.includes("galaxy")){
+        imageDiv.style.color = "#d8b4ff"; // tím
+    }
+    else if(previewPic.alt.includes("car")){
+        imageDiv.style.color = "#ff5252"; // đỏ
+    }
+    else if(previewPic.alt.includes("motorbike")){
+        imageDiv.style.color = "#ff9800"; // cam
+    }
+    else if(previewPic.alt.includes("truck")){
+        imageDiv.style.color = "#ffd700"; // gold
+    }
+}
+
+function unDo(){
+    let imageDiv = document.getElementById("image");
+
+    imageDiv.innerHTML = "Hover over an image below to display here.";
+    imageDiv.style.backgroundImage = "";
+    imageDiv.style.color = "white";
+}
+
+/* thêm tabindex */
+function addTabFocus(){
+    console.log("Page loaded");
+
+    let images = document.querySelectorAll("img");
+
+    for(let i = 0; i < images.length; i++){
+        images[i].setAttribute("tabindex", "0");
+    }
+}
