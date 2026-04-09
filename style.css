@@ -29,6 +29,11 @@ h1 {
     object-fit: contain;
 }
 
+#caption {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
 
 .gallery {
     display: grid;
