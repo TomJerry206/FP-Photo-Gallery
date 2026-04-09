@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="addTabFocus()">
+
+    <h1>My Photo Gallery</h1>
+
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <div class="gallery">
+
+        <!-- 🌿 Hàng 1: Nature -->
+        <img src="images/beach.jpg" alt="A beautiful beach with blue water"
+        onmouseover="upDate(this)" onmouseleave="unDo()"
+        onfocus="upDate(this)" onblur="unDo()">
+
+        <img src="images/mountain.jpg" alt="Green mountains with trees"
+        onmouseover="upDate(this)" onmouseleave="unDo()"
+        onfocus="upDate(this)" onblur="unDo()">
+
+        <img src="images/galaxy.jpg" alt="A bright galaxy full of stars"
+        onmouseover="upDate(this)" onmouseleave="unDo()"
+        onfocus="upDate(this)" onblur="unDo()">
+
+        <!-- 🚗 Hàng 2: Vehicles -->
+        <img src="images/car1.jpg" alt="A red sports car on the road"
+        onmouseover="upDate(this)" onmouseleave="unDo()"
+        onfocus="upDate(this)" onblur="unDo()">
+
+        <img src="images/bike.jpg" alt="A motorbike in the city"
+        onmouseover="upDate(this)" onmouseleave="unDo()"
+        onfocus="upDate(this)" onblur="unDo()">
+
+        <img src="images/truck.jpg" alt="A large truck on the highway"
+        onmouseover="upDate(this)" onmouseleave="unDo()"
+        onfocus="upDate(this)" onblur="unDo()">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
