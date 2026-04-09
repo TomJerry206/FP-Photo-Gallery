@@ -11,13 +11,14 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* vùng preview */
+
 #image {
     width: 80%;
     height: 300px;
     margin: 20px auto;
     border: 2px solid white;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     line-height: 300px;
     font-size: 20px;
